@@ -8,6 +8,10 @@
         {%- if site.last_updated -%}
         Last updated: {{ "now" | date: '%B %d, %Y' }}.
         {%- endif %}
+
+        <div class="social">
+          {% include social.html %}
+        </div>
       </div>
     </footer>
     {%- else -%}
@@ -20,6 +24,10 @@
         {%- if site.last_updated -%}
         Last updated: {{ "now" | date: '%B %d, %Y' }}.
         {%- endif %}
+
+        <div class="social">
+          {% include social.html %}
+        </div>
       </div>
     </footer>
     {%- endif %}
