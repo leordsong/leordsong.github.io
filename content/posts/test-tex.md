@@ -12,10 +12,11 @@ Displayed math:
 \varnothing &\rightarrow A
 \end{aligned}` >}}
 
+Equation (1)
 $$
 R_{\mu \nu} - {1 \over 2}g_{\mu \nu}\,R + g_{\mu \nu} \Lambda
-= {8 \pi G \over c^4} T_{\mu \nu}
-$$
+= {8 \pi G \over c^4} T_{\mu \nu} \tag{1} \label{eq:einstein}
+$$ 
 
 The equation $$(x_i \cdot x_j)^2$$ is called kernel function and is often written as $$k(x_i, x_j)$$.
 
@@ -38,3 +39,5 @@ S_i^{(t)} = \big \{ x_p : \big \| x_p - \mu^{(t)}_i \big \|^2 \le \big \| x_p - 
 $$
 
 (The error above is a demo for incorrect formulas.)
+
+For example, you can refer to Equation \ref{eq:einstein} or Equation \ref{eq:einstein}.
