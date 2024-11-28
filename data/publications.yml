@@ -1,0 +1,13 @@
+- title: "Milo: Attacking Deep Pre-trained Model for Programming Languages Tasks with Anti-analysis Code Obfuscation"
+  year: 2023
+  authors: Leo Song, Steven H. H. Ding
+  venue: "IEEE 47th Annual Computers, Software, and Applications Conference (COMPSAC)"
+- title: "Obfuscated Clone Search in JavaScript based on Reinforcement Subsequence Learning"
+  year: 2024
+  venue: under review
+  authors: Leo Song, Steven H. H. Ding, Yuan Tian, Li Tao Li, Philippe Charland, Andrew Walenstein
+- title: "Chain-of-Experts (CoE): Reverse Engineering Software Bills of Materials for JavaScript Application Bundles through Code Clone Search"
+  authors: Leo Song, Steven H. H. Ding, Yuan Tian, Li Tao Li, Philippe Charland, Andrew Walenstein
+  venue: arXiv
+  url: https://arxiv.org/abs/2408.16198
+  year: 2024

@@ -1,6 +1,3 @@
-- title: Name
-  value: Leo Song
-
 - title: Education
   type: time_table
   contents:
@@ -25,21 +22,3 @@
       description:
         - Server Developer
 
-
-- title: Academic Interests
-  type: list
-  contents:
-    - Deep Learning
-    - Security
-
-- title: Programming Languages
-  type: list
-  contents:
-    - Java
-    - Python
-
-- title: Languages
-  type: list
-  contents:
-    - Chinese
-    - English

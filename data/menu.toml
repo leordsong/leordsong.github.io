@@ -5,42 +5,65 @@ title = "My dogs"
 
   [[entries.entries]]
   title = "Milo"
-  url = '/dogs'
+  url = 'dogs/milo'
+
+[[entries]]
+title = "all posts"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
 
 [[entries]]
 title = "Publications"
 url = '/publications'
 
 [[entries]]
-title = "all posts"
-
-  [entries.post_list]
-  limit = 2
-  show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "posts"
-
-[[entries]]
 title = "Background"
 url = '/info'
 
 [[entries]]
-title = "Games"
+title = "Programming Languages"
 
   [[entries.entries]]
-  title = "Black Myth: Wukong"
+  title = "Java"
+  [[entries.entries]]
+  title = "Python"
 
 [[entries]]
-title = "Personal Interests"
+title = "Languages"
+
+  [[entries.entries]]
+  title = "Chinese"
+  [[entries.entries]]
+  title = "English"
+
+[[entries]]
+title = "Academic Interests"
+
+  [[entries.entries]]
+  title = "Deep Learning"
+
+  [[entries.entries.entries]]
+  title = "Long sequence"
+  [[entries.entries.entries]]
+  title = "Multi-task Learning"
+  [[entries.entries.entries]]
+  title = "Extrapolate"
+
+  [[entries.entries]]
+  title = "Security"
+
+[[entries]]
+title = "Mind Interests"
 
   [[entries.entries]]
   title = "Programming"
 
   [[entries.entries]]
   title = "Gaming"
-
-  [[entries.entries]]
-  title = "Snowboarding"
 
   [[entries.entries]]
   title = "Penmanship"
@@ -50,7 +73,23 @@ title = "Personal Interests"
 
   [[entries.entries]]
   title = "Writing"
+
+[[entries]]
+title = "Physical Interests"
+
   [[entries.entries]]
   title = "Road Bike"
+
+  [[entries.entries]]
+  title = "Snowboarding"
+
+  [[entries.entries]]
+  title = "Swimming"
+
+  [[entries.entries]]
+  title = "Tennis"
+
+  [[entries.entries]]
+  title = "Ping Pong"
   
 

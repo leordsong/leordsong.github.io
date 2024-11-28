@@ -5,6 +5,6 @@
     <h1>Publications</h1>
 </header>
 {{ .Content }}
-{{ partial "contents.html" (dict "context" . "contents" $.Site.Data.publications) }}
+{{ partial "publication.html" (dict "context" . "contents" $.Site.Data.publications) }}
 
 {{ end }}

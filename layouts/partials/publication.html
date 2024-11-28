@@ -1,0 +1,28 @@
+<ul>
+    {{- range $item := .contents -}}
+        <!-- <li>
+            {{ safeHTML $item.title }}, {{ $item.year }}, {{ $item.venue }}
+        </li> -->
+        <li>
+            <h2>
+                {{- with $item.url -}}
+                <a href="{{ $item.url | relURL }}">{{ safeHTML $item.title }}</a>
+                {{- else -}}
+                    {{ safeHTML $item.title }}
+                {{- end -}}
+            </h2>
+            <p>
+                <strong>Authors:</strong> {{ $item.authors }}<br>
+                {{ if $item.journal }}<strong>Journal:</strong> {{ $item.journal }}<br>{{ end }}
+                {{ if $item.volume }}<strong>Volume:</strong> {{ $item.volume }}<br>{{ end }}
+                {{ if $item.venue }}<strong>Venue:</strong> {{ $item.venue }}<br>{{ end }}
+                {{ if $item.issue }}<strong>Issue:</strong> {{ $item.issue }}<br>{{ end }}
+                {{ if $item.pages }}<strong>Pages:</strong> {{ $item.pages }}<br>{{ end }}
+                {{ if $item.doi }}<strong>DOI:</strong> <a href="{{ $item.doi }}">{{ $item.doi }}</a><br>{{ end }}
+                {{ if $item.year }}<strong>Year:</strong> {{ $item.year }}<br>{{ end }}
+            </p>
+          </li>
+    {{- end -}}
+
+    
+  </ul>
