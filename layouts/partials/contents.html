@@ -1,0 +1,29 @@
+<ul>
+    {{- range $item := .contents -}}
+        <li>
+            {{ safeHTML $item.title }}
+        </li>
+  
+        {{ if eq $item.type "time_table" }}
+            {{ partial "time-table.html" (dict "context" . "contents" $item.contents) }}
+        {{ else if eq $item.type "map" }}
+          <dl>
+            {{ range $entry := $item.contents }}
+              <dt>{{ $entry.name }}</dt>
+              <dd>
+                {{ $entry.value }}
+              </dd>
+            {{ end }}
+          </dl>
+        {{ else if eq $item.type "list" }}
+          <ul>
+            {{ range $entry := $item.contents }}
+              <li>{{$entry}}</li>
+            {{ end }}
+          </ul>
+        {{else}}
+        {{$item.value}}
+        {{ end }}
+    {{- end -}}
+  </ul>
+  

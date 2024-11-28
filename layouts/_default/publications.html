@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<header>
+    <h1>Publications</h1>
+</header>
+{{ .Content }}
+{{ partial "contents.html" (dict "context" . "contents" $.Site.Data.publications) }}
+
+{{ end }}

@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+        <th>Title</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $entry := .contents }}
+        <tr>
+            <td>{{ $entry.title }}</td>
+            <td>{{ $entry.institution }}</td>
+            <td>{{ $entry.year }}</td>
+            <td>
+            <ul>
+                {{ range $desc := $entry.description }}
+                <li>{{ $desc }}</li>
+                {{ end }}
+            </ul>
+            </td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

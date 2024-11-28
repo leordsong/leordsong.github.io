@@ -1,0 +1,56 @@
+
+
+[[entries]]
+title = "My dogs"
+
+  [[entries.entries]]
+  title = "Milo"
+  url = '/dogs/milo'
+
+[[entries]]
+title = "Publications"
+url = '/publications'
+
+[[entries]]
+title = "all posts"
+
+  [entries.post_list]
+  limit = 2
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
+
+[[entries]]
+title = "Background"
+url = '/info'
+
+[[entries]]
+title = "Games"
+
+  [[entries.entries]]
+  title = "Black Myth: Wukong"
+
+[[entries]]
+title = "Personal Interests"
+
+  [[entries.entries]]
+  title = "Programming"
+
+  [[entries.entries]]
+  title = "Gaming"
+
+  [[entries.entries]]
+  title = "Snowboarding"
+
+  [[entries.entries]]
+  title = "Penmanship"
+
+  [[entries.entries]]
+  title = "Reading"
+
+  [[entries.entries]]
+  title = "Writing"
+  [[entries.entries]]
+  title = "Road Bike"
+  
+
