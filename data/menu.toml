@@ -5,7 +5,7 @@ title = "My dogs"
 
   [[entries.entries]]
   title = "Milo"
-  url = '/dogs/milo'
+  url = '/dogs'
 
 [[entries]]
 title = "Publications"
