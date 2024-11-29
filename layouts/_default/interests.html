@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+<!-- {{ partial "post_list.html" (dict "context" . "section" $.Site.Data.interests)}} -->
+<ul>
+    {{- range $item := $.Site.Data.interests.entries -}}
+        <li>
+            {{- with $item.url -}}
+                <a href="{{ $item.url | relURL }}">{{ safeHTML $item.title }}</a>
+            {{- else -}}
+                {{ safeHTML $item.title }}
+            {{- end -}}
+        </li>
+
+        {{- if $item.entries }}
+            {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}
+        {{- end -}}
+    {{- end -}}
+</ul>
+{{ end }}

@@ -29,7 +29,11 @@
     <ul>
         {{- range $post := $posts -}}
         <li>
-            <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+            {{- if $post.Params.year}}
+                <span>{{ $post.Params.year }}</span>
+            {{- else if $post.Date }}
+                <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+            {{ end }}
             <a href="{{ $post.Permalink | relURL }}">{{ $post.Title }}</a>
         </li>
         {{ end }}
